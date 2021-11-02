@@ -1,0 +1,21 @@
+server:
+   port: 8100
+      
+spring:
+  application:
+    name: ZuulGateway
+    
+zuul:
+   routes:
+      FlightMS:
+         serviceId: FlightMS
+      Booking:
+         serviceId: Booking
+      CheckIn:
+         serviceId: CheckIn
+#      login-service:
+#         url: http://localhost:9004
+      User:
+         serviceId: User
+      LoginService:
+         serviceId: LoginService   
